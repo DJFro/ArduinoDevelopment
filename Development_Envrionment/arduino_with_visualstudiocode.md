@@ -3,7 +3,7 @@
 This document describes the steps to setup Visual Studio Code for Arduino development.
 
 - Install latest __Arduino Ide__: [Download here](https://www.arduino.cc/en/Main/Software) 
-- Instal __Visual Studio Code__
+- Instal __Visual Studio Code__: [Download here](https://code.visualstudio.com/download)
 - Install the __Arduino extension__ from de VSCode market place
 - Reload VSCode
 - Press `F1`, type `"Open User Settings"`, hit `Enter`
@@ -21,7 +21,7 @@ This document describes the steps to setup Visual Studio Code for Arduino develo
 ----------
 
 ## Steps before you can compile and upload code to the board
-Before you can compile and run your code on your arduino you have to let VSCode know what Arduino Board you are using and on to which port it is connected.
+Before you can compile and run your code on your arduino you have to let VSCode know what Arduino Board you are using and to which port it is connected.
 
 - Press `F1`, type `"Arduino: Board Config"`, hit `Enter`
   - Select your Arduino board from the list.
