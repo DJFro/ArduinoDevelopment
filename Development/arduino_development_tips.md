@@ -3,7 +3,7 @@
 ### 1. Delay
 Avoid using: 
 ```arduino 
-delay(DELAY_IN_MILLISECONDS)
+delay(DELAY_IN_MILLISECONDS);
 ``` 
 This freezes the microcontroller completely for the specified time. Instead use a pattern like this:
 
@@ -29,21 +29,22 @@ If you want to write custom libraries or OOP code you need to include the files 
 
 ```
 arduino_sketch_name/
-|── .vscode/
+|
+|── .vscode/                      //Folder .vscode is only here if you use Visual Studio Code
 |   |── arduino.json
 |   └── c_cpp_properties.json
 |
-|── src/
+|── src/                          //Folder where you should include your custom classes.
 |   |── keyword.txt
 |   |── CustomClass.cpp
 |   |── CustomClass.h
 |   |
-|   └── nested/
+|   └── nested/                   //This can be nested in other folders as long as they are a subfolder of /src
 |       |── keyword.txt
 |       |── CustomNestedClass.cpp
 |       └── CustomNestedClass.h
 |
-└── arduino_sketch_name.ino
+└── arduino_sketch_name.ino       //Your main sketch file.
 ```
 
 Custom classes in the source folder can then be included between `""`. Thrid party libraries are still included between `<>`.
