@@ -41,8 +41,24 @@ Before you can compile and run your code on your arduino you have to let VSCode 
 
 ## Handy VSCode Arduino development tips
 
-- You can use the build in Library manager to install third party libraries in the proper global location.
+- You can use the build in Library manager to install __3rd party libraries__ in the proper global location.
   - Press `F1`, type `"Arduino: Library Manager"`, hit `Enter`
-  - Search the third party libraries you need and click `install`
+  - Search the 3rd party libraries you need and click `install`
+
+- You can add __3rd party Arduino Board__ configurations and packages by overwriting the `Additional Board Manager URLs`
+  - Press `F1`, type `"Open User Settings"`, hit `Enter`
+  - Add the following attribute to your settings.json (opened in the editor on the right by the command above): `"arduino.additionalUrls"`
+  - Specify urls of 3rd party package sources as a comma seperated list or string array. i.e.:
+
+    ```json
+    "arduino.additionalUrls": 
+    [
+        "https://adafruit.github.io/arduino-board-index/package_adafruit_index.json",
+        "https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json"
+    ]
+    ```
+  - To install a 3rd party board package:
+    - Press `F1`, type `"Arduino: Board Manager"`, hit `Enter`
+    - Install the (new) board packages from the list.
 
 ----
