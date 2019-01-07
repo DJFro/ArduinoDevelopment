@@ -1,6 +1,7 @@
 ## Steps to configure Visual Studio Code for Arduino development
 
 This document describes the steps to setup Visual Studio Code for Arduino development.
+This guide is aimed at windows users, if on a mac replace `F1` with `command` + `shift` + `p`
 
 - Install latest __Arduino Ide__: [Download here](https://www.arduino.cc/en/Main/Software) 
 - Instal __Visual Studio Code__: [Download here](https://code.visualstudio.com/download)
