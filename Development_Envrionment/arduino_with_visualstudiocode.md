@@ -30,7 +30,7 @@ Before you can compile and run your code on your arduino you have to let VSCode 
 - Press `F1`, type `"Arduino: Select Serial Port"`, hit `Enter`
   - Select the port your Arduino is connected to.
 
-- Open the __blink.ino__ file is not still open and press `F1`, type `"Arduino: Verify"`, hit `Enter` (or use `Ctrl` + `Alt`+ `R`)  
+- Open the __blink.ino__ file and press `F1`, type `"Arduino: Verify"`, hit `Enter` (or use `Ctrl` + `Alt`+ `R`)  
    The Arduino sketch is now compiled.
 
 - Press `F1`, type `"Arduino: Upload"`, hit `Enter` (or use `Ctrl` + `Alt`+ `U`)  
