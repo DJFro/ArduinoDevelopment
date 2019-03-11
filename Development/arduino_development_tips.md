@@ -7,7 +7,7 @@ delay(DELAY_IN_MILLISECONDS);
 ``` 
 This freezes the microcontroller completely for the specified time. Instead use a pattern like this:
 
-   ```arduino
+   ```C++
    #define DELAY_IN_MILLISECONDS 100
    unsigned long _lastUpdated = 0;
 
@@ -49,7 +49,7 @@ arduino_sketch_name/
 
 Custom classes in the source folder can then be included between `""`. Thrid party libraries are still included between `<>`.
 In your sketch this looks as follows:
-```arduino
+```C++
 /*Third party library form the global library folder*/
 #include <ThirdPartyLibrary.h>
 
