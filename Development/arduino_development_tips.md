@@ -2,7 +2,7 @@
 
 ### 1. Delay
 Avoid using: 
-```arduino 
+```C++ 
 delay(DELAY_IN_MILLISECONDS);
 ``` 
 This freezes the microcontroller completely for the specified time. Instead use a pattern like this:
